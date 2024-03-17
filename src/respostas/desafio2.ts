@@ -1,35 +1,37 @@
+// Como podemos melhorar o esse código usando TS?
 
-enum Trabalho {
-    Atriz,
-    Padeiro
+interface Employees {
+    name: string;
+    age: number;
+    job: string;
 }
 
-type Humano = {
-    nome: string,
-    idade: number,
-    profissao: Trabalho
-}
+let pessoa1 : Employees = {
+    name: "",
+    age: 0,
+    job: ""
+};
+pessoa1.name = "maria";
+pessoa1.age = 29;
+pessoa1.job = "atriz";
 
-let pessoa1: Humano = {
-    nome: 'maria',
-    idade: 29,
-    profissao: Trabalho.Atriz
+let pessoa2 : Employees = {
+    name: "",
+    age: 0,
+    job: ""
+};
+pessoa2.name = "roberto";
+pessoa2.age = 19;
+pessoa2.job = "Padeiro";
+
+let pessoa3: Employees= {
+    name: "laura",
+    age: Number("32"),
+    job: "Atriz"
 };
 
-let pessoa2: Humano = {
-    nome: 'roberto',
-    idade: 19,
-    profissao: Trabalho.Padeiro
-};
-
-let pessoa3: Humano = {
-    nome: 'laura',
-    idade: 32,
-    profissao: Trabalho.Atriz
-};
-
-let pessoa4: Humano = {
-    nome: "carlos",
-    idade: 19,
-    profissao: Trabalho.Padeiro
+let pessoa4 : Employees= {
+    name: "carlos",
+    age: 19,
+    job: "padeiro"
 }
